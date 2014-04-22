@@ -159,7 +159,6 @@
     <Compile Include="Helpers\DebugHelper.cs" />
     <Compile Include="Helpers\DiabloClone.cs" />
     <Compile Include="Helpers\Enums\Loglevel.cs" />
-    <Compile Include="Helpers\Enums\MonsterPower.cs" />
     <Compile Include="Helpers\Hotkeys\ActionContainer.cs" />
     <Compile Include="Helpers\Hotkeys\Actions\ResizeCurrent.cs" />
     <Compile Include="Helpers\Hotkeys\Actions\FullScreen.cs" />
@@ -299,6 +298,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SettingsTree\AntiIdle.resx">
       <DependentUpon>AntiIdle.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SettingsTree\AutoPosition.resx">
       <DependentUpon>AutoPosition.cs</DependentUpon>
@@ -338,12 +338,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Wizard\ProfileSchedule.resx">
       <DependentUpon>ProfileSchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Wizard\SetAffinity.resx">
       <DependentUpon>SetAffinity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Wizard\WizardMain.resx">
       <DependentUpon>WizardMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Wizard\WeekSchedule.resx">
       <DependentUpon>WeekSchedule.cs</DependentUpon>

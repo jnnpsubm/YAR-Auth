@@ -64,7 +64,8 @@ namespace YetAnotherRelogger.Forms.Wizard
             Controls.Add(_ucAdvanced);
             _ucDiablo.Visible =
                 _ucWeekSchedule.Visible = _ucProfileSchedule.Visible = _ucHeroes.Visible = _ucAdvanced.Visible = false;
-            FinishCount = Controls.Count - 1; // Get Finish count
+
+			FinishCount = Controls.Count - 1; // Get Finish count
 
             AffinityDiablo = new SetAffinity();
             AffinityDemonbuddy = new SetAffinity();
@@ -393,9 +394,9 @@ namespace YetAnotherRelogger.Forms.Wizard
             }
 
             if (_stepCount > _mainCount)
-                button2.Enabled = true;
+                buttonBack.Enabled = true;
             if (_stepCount == FinishCount)
-                button1.Text = "Save!";
+                buttonNext.Text = "Save!";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -406,9 +407,9 @@ namespace YetAnotherRelogger.Forms.Wizard
             _stepCount--;
             Controls[_stepCount].Visible = true; // Show new
             if (_stepCount == _mainCount)
-                button2.Enabled = false;
+                buttonBack.Enabled = false;
             if (_stepCount < FinishCount)
-                button1.Text = "Next ->";
+                buttonNext.Text = "Next ->";
         }
 
         private void button3_Click(object sender, EventArgs e)
